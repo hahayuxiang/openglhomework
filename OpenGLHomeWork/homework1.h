@@ -50,7 +50,7 @@ public:
 		for (int i = 1; i < 5; i++) {
 			float timeValue = glfwGetTime() + i;
 			float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
-			this->pshader->Set4Float("Ourcolor", 1.0f, greenValue, 0.0f, 1.0f);
+			this->pshader->Set4Float("Ourcolor", 1.0f, 0.870588f, 0.0f, 1.0f);
 			glBindVertexArray(VAO[i]);
 			glDrawElements(GL_TRIANGLES, num, GL_UNSIGNED_INT, 0);//分别画其余五个小五角星
 		}
